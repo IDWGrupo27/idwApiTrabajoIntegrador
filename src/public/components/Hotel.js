@@ -1,6 +1,6 @@
 class Hotel extends HTMLElement {
     static get observedAttributes() {
-        return ['name', 'imgSrc'];
+        return ["name", "imgSrc"];
     }
 
     constructor() {
@@ -8,17 +8,21 @@ class Hotel extends HTMLElement {
     }
 
     connectedCallback() {
-        const hotelName = this.getAttribute('name');
-        const imgSrc = this.getAttribute('imgSrc');
-        this.innerHTML = `
+        const hotelName = this.getAttribute("name");
+        const imgSrc = this.getAttribute("imgSrc");
+        this.innerHTML = /*html*/ `
+        <link rel="stylesheet" href="../css/Hotel.css" />
         <div class="hotel">
             <img src="${imgSrc}" alt="hotel" />
             <div class="hotel-info">
-                <a href="https://www.hotelkilton.com.ar/">${hotelName}</a>
-                <p>Descripción del hotel. Ubicación. Puntaje.</p>
+                <div style="display: flex; align-items: flex-end; justify-content: center; gap: 6rem;">
+                     <a href="https://www.hotelkilton.com.ar/">${hotelName}</a>
+                     <span>✭ 4.50</span>
+                </div>
+                <p style="margin: 0.25rem; margin-top: 1rem;">Descripción del hotel. Ubicación. Amenities.</p>
             </div>
         </div>;
-    `
+    `;
     }
 }
 

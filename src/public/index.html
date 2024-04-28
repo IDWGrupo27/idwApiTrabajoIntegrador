@@ -4,38 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="./components/Hotel.js"></script>
+        <script src="./components/IdwHeader.js"></script>
+        <script src="./components/IdwFooter.js"></script>
         <link rel="stylesheet" href="../css/style.css" />
         <title>IDW</title>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <a href="https://www.airbnb.com.ar/"
-                    ><img
-                        src="../img/logo.png"
-                        alt="IDW alojamiento"
-                        height="40"
-                /></a>
-                <h2>IDW alojamiento</h2>
-            </div>
-
-            <div class="header-menu">
-                <div class="menu-item">
-                    <span>Mi reserva</span>
-                </div>
-                <div class="menu-item">
-                    <span>Publicá tu propiedad</span>
-                </div>
-                <div class="menu-item">
-                    <span>Ayuda</span>
-                </div>
-            </div>
-
-            <div class="phone-number">
-                <span>Para venta telefónica</span>
-                <span class="number">0800-999-1234</span>
-            </div>
-        </header>
+        <idw-header></idw-header>
         <main>
             <section class="info">
                 <div>
@@ -47,15 +22,34 @@
                 </div>
                 <div class="search-avail">
                     <div>
-                        <input
-                            type="text"
-                            placeholder="Destino"
-                            name="destination"
-                        />
-                        <input type="date" name="checkin-date" />
-                        <input type="date" name="checkout-date" />
+                        <form action="submit" class="search-form">
+                            <div class="search-input-field">
+                                <label for="destination">Destino</label>
+                                <input
+                                    type="text"
+                                    placeholder="¿Adónde vas?"
+                                    name="destination"
+                                />
+                            </div>
+                            <div class="search-input-field">
+                                <label for="checkin-date">Check-in</label>
+                                <input
+                                    type="date"
+                                    name="checkin-date"
+                                    required
+                                />
+                            </div>
+                            <div class="search-input-field">
+                                <label for="checkout-date">Check-out</label>
+                                <input
+                                    type="date"
+                                    name="checkout-date"
+                                    required
+                                />
+                            </div>
+                        </form>
                     </div>
-                    <a href="/edit.html"><button class="btn">Buscar</button></a>
+                    <a href="/edit.html"><button>Buscar hoteles</button></a>
                 </div>
             </section>
 
@@ -74,18 +68,6 @@
                 ></hotel-component>
             </section>
         </main>
-        <footer>
-            <div class="footer">
-                <p>&copy; IDW 2024. Todos los derechos resevados.</p>
-                <div>
-                    <a href="https://www.hotelkilton.com.ar/">Contacto</a> |
-                    <a href="https://www.hotelkilton.com.ar/"
-                        >Información institucional</a
-                    >
-                    |
-                    <a href="https://www.hotelkilton.com.ar/">Privacidad</a>
-                </div>
-            </div>
-        </footer>
+        <idw-footer></idw-footer>
     </body>
 </html>
