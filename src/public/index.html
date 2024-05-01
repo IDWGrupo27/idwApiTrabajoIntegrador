@@ -1,73 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="./components/Hotel.js"></script>
-        <script src="./components/IdwHeader.js"></script>
-        <script src="./components/IdwFooter.js"></script>
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>IDW</title>
-    </head>
-    <body>
-        <idw-header></idw-header>
-        <main>
-            <section class="info">
-                <div>
-                    <h1>Encuentra tu alojamiento en este sitio</h1>
-                    <p>
-                        Esto es un parrafo para agregar info a nuestra portada
-                        de sitio de alojamiento
-                    </p>
-                </div>
-                <div class="search-avail">
-                    <div>
-                        <form action="submit" class="search-form">
-                            <div class="search-input-field">
-                                <label for="destination">Destino</label>
-                                <input
-                                    type="text"
-                                    placeholder="¿Adónde vas?"
-                                    name="destination"
-                                />
-                            </div>
-                            <div class="search-input-field">
-                                <label for="checkin-date">Check-in</label>
-                                <input
-                                    type="date"
-                                    name="checkin-date"
-                                    required
-                                />
-                            </div>
-                            <div class="search-input-field">
-                                <label for="checkout-date">Check-out</label>
-                                <input
-                                    type="date"
-                                    name="checkout-date"
-                                    required
-                                />
-                            </div>
-                        </form>
-                    </div>
-                    <a href="/edit.html"><button>Buscar hoteles</button></a>
-                </div>
-            </section>
 
-            <section class="contenedor hoteles">
-                <hotel-component
-                    name="Hotel 1"
-                    imgSrc="../img/hotel.png"
-                ></hotel-component>
-                <hotel-component
-                    name="Hotel 2"
-                    imgSrc="../img/hotel.png"
-                ></hotel-component>
-                <hotel-component
-                    name="Hotel 3"
-                    imgSrc="../img/hotel.png"
-                ></hotel-component>
-            </section>
-        </main>
-        <idw-footer></idw-footer>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./components/Hotel.js"></script>
+    <script src="./components/IdwHeader.js"></script>
+    <script src="./components/IdwFooter.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>IDW</title>
+</head>
+
+<body>
+    <idw-header></idw-header>
+    <main>
+        <section class="info">
+            <div>
+                <h1>Encuentra tu alojamiento en este sitio</h1>
+                <p>
+                    Esto es un parrafo para agregar info a nuestra portada
+                    de sitio de alojamiento
+                </p>
+            </div>
+            <div class="search-avail">
+                <div>
+                    <form action="submit" class="search-form">
+                        <div class="search-input-field">
+                            <label for="destination">Destino</label>
+                            <input type="text" placeholder="¿Adónde vas?" name="destination" />
+                        </div>
+                        <div class="search-input-field">
+                            <label for="checkin-date">Check-in</label>
+                            <input type="date" name="checkin-date" required />
+                        </div>
+                        <div class="search-input-field">
+                            <label for="checkout-date">Check-out</label>
+                            <input type="date" name="checkout-date" required />
+                        </div>
+                    </form>
+                </div>
+                <a href="/edit.html"><button>Buscar hoteles</button></a>
+            </div>
+        </section>
+
+        <section class="contenedor hoteles">
+            <hotel-component name="Hotel 1" imgSrc="../img/hotel.png"></hotel-component>
+            <hotel-component name="Hotel 2" imgSrc="../img/hotel.png"></hotel-component>
+            <hotel-component name="Hotel 3" imgSrc="../img/hotel.png"></hotel-component>
+        </section>
+    </main>
+    <idw-footer></idw-footer>
+</body>
+
 </html>
