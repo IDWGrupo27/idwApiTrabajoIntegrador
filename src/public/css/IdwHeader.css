@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25vw;
+    gap: 15vw;
     height: var(--header-height);
     background-color: var(--naranja);
 }

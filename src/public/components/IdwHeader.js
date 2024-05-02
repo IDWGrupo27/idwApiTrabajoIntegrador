@@ -8,14 +8,10 @@ class IdwHeader extends HTMLElement {
         <link rel="stylesheet" href="./css/IdwHeader.css" />
         <header>
             <div>
-                <a href="https://www.airbnb.com.ar/">
+                <a href="./index.html">
                     <div class="logo">
                         <img
                         src="../img/logo.png"
-            <div class="logo">
-                <a href="https://www.airbnb.com.ar/"
-                    ><img
-                        src="./img/logo.png"
                         alt="IDW alojamiento"
                         height="40"
                     />
@@ -25,15 +21,15 @@ class IdwHeader extends HTMLElement {
             </div>
 
             <div class="header-menu">
-                <div class="menu-item">
+                <a class="menu-item" href="./informacionInstitucional.html">
                     <span>Mi reserva</span>
-                </div>
-                <div class="menu-item">
-                    <span>Publicá tu propiedad</span>
-                </div>
-                <div class="menu-item">
-                    <span>Ayuda</span>
-                </div>
+                </a>
+                <a class="menu-item" href="./informacionInstitucional.html">
+                    <span>Contacto</span>
+                </a>
+                <a class="menu-item" href="./informacionInstitucional.html">
+                    <span>Información</span>
+                </a>
             </div>
 
             <div class="phone-number">
