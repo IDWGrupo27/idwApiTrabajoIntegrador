@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./components/IdwHeader.js"></script>
+        <script src="./components/IdwFooter.js"></script>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/contacto.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <idw-header></idw-header>
+        <main>
+            <section class="contacto">
+                
+                <form action="submit" class="" action="index.html">
+                    <h1>FORMULARIO DE CONTACTO</h1>
+                    <div class="input-group">
+                        <label for="name"  class="required" >Nombre:</label>
+                        <input class="inpt" type="text" name="name" placeholder="Nombre..." required/>
+                    
+                        <label for="last_name" class="required" >Apellido:</label>
+                        <input class="inpt" type="text" name="last_name" placeholder="Apellido..." required/>
+                    
+                        <label for="email" class="required" >Email:</label>
+                        <input class="inpt" type="email" name="email" placeholder="Email..." required/>
+                    
+                        <label for="message" class="required" >Mensaje:</label>
+                        <textarea cols="30" rows="5" name="message" required></textarea>
+                        
+                    </div>
+
+                    <!--<button class="btn" type="submit">Enviar</button>-->
+                    <a class="btn" href="./mensaje_enviado.html"><i class="fa fa-share-square"></i>&nbsp; Enviar</a>
+
+                </form>
+                
+            </section>
+        </main>
+        <idw-footer></idw-footer>
+    </body>
+</html>
