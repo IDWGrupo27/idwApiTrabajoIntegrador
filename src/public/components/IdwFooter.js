@@ -10,11 +10,8 @@ class IdwFooter extends HTMLElement {
             <div class="footer">
                 <p>&copy; IDW 2024. Todos los derechos resevados.</p>
                 <div>
-                    <a href="https://www.hotelkilton.com.ar/">Contacto</a> |
-                    <a href="./informacionInstitucional.html"
-                        >Información institucional</a
-                    >
-                    |
+                    <a href="./contacto.html">Contacto</a> |
+                    <a href="./informacionInstitucional.html">Información institucional</a>|
                     <a href="https://www.hotelkilton.com.ar/">Privacidad</a>
                 </div>
             </div>

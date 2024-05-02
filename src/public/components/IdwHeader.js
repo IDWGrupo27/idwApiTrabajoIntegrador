@@ -24,7 +24,7 @@ class IdwHeader extends HTMLElement {
                 <a class="menu-item" href="./informacionInstitucional.html">
                     <span>Mi reserva</span>
                 </a>
-                <a class="menu-item" href="./informacionInstitucional.html">
+                <a class="menu-item" href="./contacto.html">
                     <span>Contacto</span>
                 </a>
                 <a class="menu-item" href="./informacionInstitucional.html">
