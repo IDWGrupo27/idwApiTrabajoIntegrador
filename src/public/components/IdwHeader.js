@@ -5,16 +5,19 @@ class IdwHeader extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = /*html*/ `
-        <link rel="stylesheet" href="../css/IdwHeader.css" />
+        <link rel="stylesheet" href="./css/IdwHeader.css" />
         <header>
-            <div class="logo">
-                <a href="https://www.airbnb.com.ar/"
-                    ><img
+            <div>
+                <a href="https://www.airbnb.com.ar/">
+                    <div class="logo">
+                        <img
                         src="../img/logo.png"
                         alt="IDW alojamiento"
                         height="40"
-                /></a>
-                <h2>IDW alojamiento</h2>
+                    />
+                    <h3>IDW alojamiento</h3>
+                </div>
+                </a>
             </div>
 
             <div class="header-menu">

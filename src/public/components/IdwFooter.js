@@ -5,7 +5,7 @@ class IdwFooter extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = /*html*/ `
-        <link rel="stylesheet" href="../css/IdwFooter.css" />
+        <link rel="stylesheet" href="./css/IdwFooter.css" />
         <footer>
             <div class="footer">
                 <p>&copy; IDW 2024. Todos los derechos resevados.</p>

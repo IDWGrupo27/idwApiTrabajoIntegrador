@@ -16,13 +16,18 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     color: white;
     display: flex;
+    gap: 0.5rem;
 }
 
 .logo img {
     border-radius: 0.5rem;
+}
+
+header a {
+    width: 100px;
+    text-decoration: none;
 }
 
 .phone-number {
