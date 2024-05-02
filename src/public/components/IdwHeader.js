@@ -12,6 +12,10 @@ class IdwHeader extends HTMLElement {
                     <div class="logo">
                         <img
                         src="../img/logo.png"
+            <div class="logo">
+                <a href="https://www.airbnb.com.ar/"
+                    ><img
+                        src="./img/logo.png"
                         alt="IDW alojamiento"
                         height="40"
                     />
